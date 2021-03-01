@@ -1,0 +1,221 @@
+/* Yuki Matsubara Morning Class_WMAD2 Week2 Weekly Assignment */
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  font-family: "Cormorant Garamond", serif;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  margin: auto;
+  /* header */
+  /* Loader */
+  /* Contents */
+}
+
+.container header {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 1s;
+  transition: 1s;
+  text-shadow: 0 0 1em #66ccff;
+}
+
+.container header button {
+  margin-bottom: 2em;
+  padding: 0 0.5em;
+  border-radius: 100vh;
+  background-color: rgba(255, 255, 255, 0.586);
+  border: #66ccffc3 0.1em solid;
+}
+
+.container header button:hover {
+  background-color: #66ccff8d;
+  border: white 0.1em solid;
+  color: white;
+  font-weight: bold;
+}
+
+.container .loader {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  background-color: linear-gradient();
+}
+
+.container .loader .spinner {
+  position: absolute;
+  top: 41%;
+  left: 47%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: 0.3em solid transparent;
+  border-top: 0.3em dotted #fca54f;
+  border-right: 0.3em dotted #fbd86e;
+  border-bottom: 0.3em dotted #dcfa79;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+.container .loader span {
+  position: absolute;
+  top: 64%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container .output {
+  opacity: 0;
+  position: relative;
+}
+
+.container .output .fa-quote-left {
+  position: absolute;
+  top: -10%;
+  left: 18%;
+  padding: 0.2em;
+  border: white 0.05em solid;
+  border-radius: 50%;
+  background-color: #66ccffc3;
+  z-index: 1;
+}
+
+.container .output .quoteOutput {
+  width: 60%;
+  height: 30%;
+  margin: auto;
+  border: 0.3em solid rgba(255, 255, 255, 0.586);
+}
+
+.container .output .quoteOutput .quo {
+  padding: 1.5em;
+  padding-bottom: 0;
+  font-size: 1.2em;
+  text-align: center;
+  border: none;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  text-shadow: 0 0 1em #66ccff;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container .output .quoteOutput .author {
+  padding-bottom: 1.5em;
+  margin-bottom: 0;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  text-shadow: 0 0 1em #66ccff;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container .clicked {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=index.css.map */

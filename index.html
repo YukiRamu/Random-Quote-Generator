@@ -1,0 +1,39 @@
+<!--Yuki Matsubara Morning Class_WMAD2 Week2 Weekly Assignment-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Quote Generator</title>
+  <link rel="stylesheet" type="text/css" href="./index.css">
+  <link rel="stylesheet" type="text/css" href="./reset.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Newsreader:ital@0;1&family=Pacifico&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a62f436beb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header id="header">
+      <h1>Quote of The Day</h1>
+      <button id="genBtn" type="button">Generate Quote</button>
+    </header>
+
+    <div id="loader" class="loader">
+      <div id="spinner" class="spinner"></div>
+      <span>loading...</span>
+    </div>
+
+    <div id="output" class="output">
+
+      <i class="fas fa-quote-left fa-2x"></i>
+      <div id="quoteOutput" class="quoteOutput"></div>
+    </div>
+  </div>
+  <script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>
