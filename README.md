@@ -1,6 +1,8 @@
 # Random-Quote-Generator
 JavaScript Random Quote Generator using HTML/CSS and JavaScript
 
+<a href="https://yukiramu.github.io/Random-Quote-Generator/">Try to generate the quote</a><br>
+
 Reference: random quote API (https://whatdoestrumpthink.com/api-docs/index.html?javascript#introduction)
 
 **■Landing Page**
